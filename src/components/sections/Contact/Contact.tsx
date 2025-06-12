@@ -1,7 +1,7 @@
 function Contact() {
     return (
       <div className="h-screen">
-        <h1>연락처</h1>
+        <h1>CONTACT</h1>
       </div>
     )
   }
