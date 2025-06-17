@@ -3,8 +3,10 @@ import Header from '@/components/sections/Header/Header';
 import Home from '@/components/sections/Home/Home';
 import Skills from '@/components/sections/Skills/Skills';
 import Contact from '@/components/sections/Contact/Contact';
+import Projects from '@/components/sections/Projects/Projects';
 import { useEffect, useRef, useState } from 'react';
 import '@/index.css';
+import Experience from './components/sections/Experience/Experience';
 
 export const menuItems = ['home', 'about', 'skills', 'projects', 'experience', 'contact'] as const;
 export type MenuItem = typeof menuItems[number];
@@ -84,8 +86,12 @@ export default function App() {
   
   return (
     <>
-      <div> 
-        <Header menuItems={menuItems} onMove={moveToSection} currentSection={currentSection} />
+      <div className="bg-darkBg"> 
+        <Header 
+          menuItems={menuItems} 
+          onMove={moveToSection} 
+          currentSection={currentSection} 
+        />
         <div ref={HomeRef}>
           <Home />
         </div>
@@ -102,6 +108,20 @@ export default function App() {
             visibleSections.includes("skills") && "visible"}`}
         >
           <Skills />
+        </div>
+        <div
+          ref={ProjectRef}
+          className={`section ${
+            visibleSections.includes("projects") && "visible"}`}
+        >
+          <Projects />
+        </div>
+        <div
+          ref={ExpRef}
+          className={`section ${
+            visibleSections.includes("experience") && "visible"}`}
+        >
+          <Experience />
         </div>
         <div
           ref={ContactRef}

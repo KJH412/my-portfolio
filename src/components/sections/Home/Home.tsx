@@ -9,9 +9,12 @@ export default function Home() {
                 alt="로고" 
                 className="w-[300px] sm:w-[400px] animate-popInUpFade" 
             />
-            <p className="transform -translate-y-[70px] text-white font-bold sm:text-[80px] text-[50px] animate-fadeInTitle">김정현 포트폴리오</p>
-        </div>
-
+            <p className="
+            transform -translate-y-[70px]
+            text-white font-bold 
+            sm:text-[80px] text-[50px] 
+            animate-fadeInTitle">김정현 포트폴리오</p>
+      </div>
     </div>
   )
 };

@@ -5,11 +5,14 @@ export default {
       extend: {
         fontFamily: {
           pre: ['Pretendard',  'sans-serif'],
+          chosun: ['Chosunilbo_myungjo', 'sans-serif'],
         },
         colors: {
-          darkBg: "#1C1E31",
-          darkMint : "#47B8A8",
+          darkBg: "#161722",
+          darkMint: "#47B8A8",
           lightMint: "#1FFFE1",
+          mainBlue: "#4267F1",
+          mainRed: "#FC5230",
         },
         keyframes: {
           fadeInTitle: {
